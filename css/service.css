@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+
+
+
+
+
+ 
+   @media (max-width:599px){
+    /* <!-- 태그 페이지 --> */
+    .sub_nav {
+        width: 100%;
+        height: 150px;
+        background-color: #85E024;
+        display: flex;
+    }
+    
+    .sub_nav .container p{height: 50px;line-height:50px; text-align: right; position: relative; 
+      float:left; padding: 0 100px; font-weight:bold;  font-size: 20px;}
+    .sub_nav .container p:not(:first-child){padding-left: 40px;}
+    .big_tag, .big_tag:after{background-color: #85E024;}
+    .middle_tag, .middle_tag:after{background-color: #86D02B;}
+    .small_tag , .small_tag:after{background-color: #57901B;}
+    
+    .sub_nav .container p:after {content:''; width:30px; height:50px; position: absolute; right:-29px; top:0; z-index:3;  clip-path: polygon(100% 50%, 0 0, 0 100%);}
+    
+    /* 서비스 페이지 */
+    
+    .service {
+        width: 1190px;
+        height: 690px;
+        margin: 0 auto;
+    }
+    
+    .service_image {
+        width: 400px;
+        height: 450px;
+        margin: 160px 0;
+        position: center;
+    }
+    
+    .service_image_page {
+        width: 100%;
+        height: auto ;
+        border: 5px solid hotpink;
+        overflow: hidden;
+    margin: 0 auto;}
+        .service_image_page img{width: 100%; height: auto; margin: 0 auto;
+            background-position: center; background-size: cover;}
+    .service_image_page img:hover{transition: 0.5s; transform: scale(1.2); cursor: pointer;
+    }
+    
+    
+    .service_image_swichi {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0;
+    }
+    
+    .service_image_swichi :nth-of-type(1){background-color:hotpink ;}
+    
+    .service_click {
+        width: 30px;
+        height: 30px;
+        background-color: gray;
+        border-radius: 100%;
+    }
+    
+    
+    .service_menu {
+        width: 100%;
+        height: auto ;
+        background-color: blue;
+    }
+    
+    .service_title{width:100%px; height: auto; 
+    font-size: 30px;  padding: 5px; letter-spacing: 1px; }
+    .service_headline{width: 100%; height: auto; 
+    margin: 16px 0; padding: 10px 0px; font-size: 18px;
+    }
+    .service_headline h4 {font-size:25px; margin: 6px 0;}
+    
+    .service_text{width: 100%; height: auto; 
+    margin: 27px 0;
+    }
+    
+    .service_button_page{width: 500px; height: 60px;
+    display: flex; justify-content:space-around;
+    }
+    .service_steamed, .service_present {width: 120px; height: 50px; margin: 5px 0;
+         display:flex; flex-direction: row; justify-content:space-around; padding: 10px ;
+         border: 3px solid gray;
+        }
+    
+    .service_steamed{ background-color:snow ;}
+    
+    .service_present{background-color:rgb(254, 39, 1);
+    } 
+    
+     .service_steamed p{margin:5px 0; color:#3f3f3f; font-weight: bold; font-size: 12px;}
+    .service_present p{margin:5px 0; color:white; font-weight: bold; font-size: 12px;}
+    .service_icon {width: 30px; height:30px; 
+    ; float: left;
+    }
+    .service_steamed .service_icon {background-image: url(/img/steamed1.png);
+    background-position: center; background-size: cover; margin: -3px 0; }
+    
+    .service_present .service_icon {background-image: url(/img/present.png);
+        background-position: center; background-size: cover;margin: -2px 0;}
+    
+    .service_pick{width:200px ; height: 60px;
+    border-radius: 30px;
+    
+    }
+    .service_pick button{width:200px ; height: 60px; border-radius: 30px; 
+        align-content:center; padding: 7px;
+    }
+    
+    .service_pick button p {text-align:center; font-size: 20px; padding: 7px;
+    font-family: 'NanumBarunGothic' ; font-weight: bold;
+    }
+    .service_button_icon {width: 40px; height:40px; background-color: #fe2b8a;
+    border-radius:100%; float: left; background-image: url(/img/point1.png);
+    background-position: center; background-size: cover;
+    }
+    
+    .service_button_icon:hover {background-color: white;}
+    
+    /* <!-- 정보 스위치 페이지 --> */
+    
+    .information_swich{width:100%; height:280px;
+   background-color: #85E024;
+    }
+    
+    .information_swich_layer{width:450px; height:400px; 
+    ; margin:-50px 0px;
+    float:left ;
+    }
+    
+    .information_swich_click{width: 450px; height: 150px;  background-color: #fe2b8a;
+    
+    }
+    
+    .information_swich_product{width: 150px; height: 150px; border-radius: 100%;
+    background-color: black; display:flex; color: #57901B; justify-content: center; 
+    flex-direction: column; align-items: center; 
+    font-weight: bold; color: white; 
+    }
+    
+    .information_swich_product_information{width: 150px; height: 150px; border-radius: 100%;
+        background-color: black; display:flex; color: #57901B; justify-content: center; 
+        flex-direction: column; align-items: center; 
+        margin: -130px 170px;
+        font-weight: bold; color: white; 
+        }
+    
+    .information_swich_review{width: 150px; height: 150px; border-radius: 100%;
+        background-color: black; display:flex; color: #57901B; justify-content: center; 
+        flex-direction: column; align-items: center; 
+    margin: 140px 260px;
+    font-weight: bold; color: white; 
+    }
+    
+    .information_swich_product:hover, .information_swich_product_information:hover, .information_swich_review:hover
+    {cursor: pointer; transition: 0.3s; background-color: white; color: hotpink;}
+    
+    .information_swich_main{width: 250px; height: 250px; border-radius: 100%;
+    background-color: black;
+    }
+    .information_swich_main:hover{background-color: hotpink; transition: 0.3s; cursor:none;}
+     .information_swich_icon {width: 70px; height:60px; 
+    margin:10px 0;
+    }
+    .information_swich_review .information_swich_icon {background-image: url(/img/review1.0.png);
+    background-position: center; background-size: cover;
+    }
+    
+    .information_swich_product_information .information_swich_icon {background-image: url(/img/information1.0.png);
+        background-position: center; background-size: cover;
+    }
+    .information_swich_product .information_swich_icon {background-image: url(/img/title1.0.png);
+        background-position: center; background-size: cover;}
+    /* 서비스 정보 페이지 */
+    
+    .information_page{width:100%; height:1500px; background-color: black;
+    justify-content: center; padding: 300px;;
+    }
+    
+    .information{width: 1190px; height: 1000px; background-color: white;
+    margin: 0 auto;
+    }
+    
+    }
+
+
+
+
+
+
+
+
+
+   @media (min-width:600px){
+/* <!-- 태그 페이지 --> */
+.sub_nav {
+    width: 100%;
+    height: 50px;
+    background-color: #85E024;
+    display: flex;
+}
+
+.sub_nav .container p{height: 50px;line-height:50px; text-align: right; position: relative; 
+  float:left; padding: 0 100px; font-weight:bold;  font-size: 20px;}
+.sub_nav .container p:not(:first-child){padding-left: 40px;}
+.big_tag, .big_tag:after{background-color: #85E024;}
+.middle_tag, .middle_tag:after{background-color: #86D02B;}
+.small_tag , .small_tag:after{background-color: #57901B;}
+
+.sub_nav .container p:after {content:''; width:30px; height:50px; position: absolute; right:-29px; top:0; z-index:3;  clip-path: polygon(100% 50%, 0 0, 0 100%);}
+
+
+
+
+
+
+
+/* 서비스 페이지 */
+
+.service {
+    width: 1190px;
+    height: 690px;
+    margin: 0 auto;
+}
+
+.service_image {
+    width: 400px;
+    height: 450px;
+    float: left;
+    margin: 160px 0;
+}
+
+.service_image_page {
+    width: 500px;
+    height: 500px;
+    border: 5px solid hotpink;
+    overflow: hidden;}
+    .service_image_page img{width: 500px; height: 500px;
+        background-position: center; background-size: cover;}
+.service_image_page img:hover{transition: 0.5s; transform: scale(1.2); cursor: pointer;}
+
+
+.service_image_swichi {
+    width: 500px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.service_image_swichi :nth-of-type(1){background-color:hotpink ;}
+
+.service_click {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 100%;
+}
+
+
+.service_menu {
+    width: 500px;
+    height: 450px;
+    float: right;
+    margin: 160px 0;
+}
+
+.service_title{width:500px; height:50px; 
+font-size: 30px;  padding: 5px; letter-spacing: 1px; }
+.service_headline{width: 500px; height: 70px; 
+margin: 16px 0; padding: 10px 0px; font-size: 18px;
+}
+.service_headline h4 {font-size:25px; margin: 6px 0;}
+
+.service_text{width: 500px; height: 200px; 
+margin: 27px 0;
+}
+
+.service_button_page{width: 500px; height: 60px;
+display: flex; justify-content:space-around;
+}
+.service_steamed, .service_present {width: 120px; height: 50px; margin: 5px 0;
+     display:flex; flex-direction: row; justify-content:space-around; padding: 10px ;
+     border: 3px solid gray;
+    }
+
+.service_steamed{ background-color:snow ;}
+
+.service_present{background-color:rgb(254, 39, 1);
+} 
+
+ .service_steamed p{margin:5px 0; color:#3f3f3f; font-weight: bold; font-size: 12px;}
+.service_present p{margin:5px 0; color:white; font-weight: bold; font-size: 12px;}
+.service_icon {width: 30px; height:30px; 
+; float: left;
+}
+.service_steamed .service_icon {background-image: url(/img/steamed1.png);
+background-position: center; background-size: cover; margin: -3px 0; }
+
+.service_present .service_icon {background-image: url(/img/present.png);
+    background-position: center; background-size: cover;margin: -2px 0;}
+
+.service_pick{width:200px ; height: 60px;
+border-radius: 30px;
+
+}
+.service_pick button{width:200px ; height: 60px; border-radius: 30px; 
+    align-content:center; padding: 7px;
+}
+
+.service_pick button p {text-align:center; font-size: 20px; padding: 7px;
+font-family: 'NanumBarunGothic' ; font-weight: bold;
+}
+.service_button_icon {width: 40px; height:40px; background-color: #fe2b8a;
+border-radius:100%; float: left; background-image: url(/img/point1.png);
+background-position: center; background-size: cover;
+}
+
+.service_button_icon:hover {background-color: white;}
+
+/* <!-- 정보 스위치 페이지 --> */
+
+.information_swich{width:1190px; height:280px;
+margin: 0 auto;
+}
+
+.information_swich_layer{width:450px; height:400px; 
+; margin:-50px 0px;
+float:left ;
+}
+
+.information_swich_click{width: 450px; height: 150px; 
+
+}
+
+.information_swich_product{width: 150px; height: 150px; border-radius: 100%;
+background-color: black; display:flex; color: #57901B; justify-content: center; 
+flex-direction: column; align-items: center; 
+font-weight: bold; color: white; 
+}
+
+.information_swich_product_information{width: 150px; height: 150px; border-radius: 100%;
+    background-color: black; display:flex; color: #57901B; justify-content: center; 
+    flex-direction: column; align-items: center; 
+    margin: -130px 170px;
+    font-weight: bold; color: white; 
+    }
+
+.information_swich_review{width: 150px; height: 150px; border-radius: 100%;
+    background-color: black; display:flex; color: #57901B; justify-content: center; 
+    flex-direction: column; align-items: center; 
+margin: 140px 260px;
+font-weight: bold; color: white; 
+}
+
+.information_swich_product:hover, .information_swich_product_information:hover, .information_swich_review:hover
+{cursor: pointer; transition: 0.3s; background-color: white; color: hotpink;}
+
+.information_swich_main{width: 250px; height: 250px; border-radius: 100%;
+background-color: black;
+}
+.information_swich_main:hover{background-color: hotpink; transition: 0.3s; cursor:none;}
+ .information_swich_icon {width: 70px; height:60px; 
+margin:10px 0;
+}
+.information_swich_review .information_swich_icon {background-image: url(/img/review1.0.png);
+background-position: center; background-size: cover;
+}
+
+.information_swich_product_information .information_swich_icon {background-image: url(/img/information1.0.png);
+    background-position: center; background-size: cover;
+}
+.information_swich_product .information_swich_icon {background-image: url(/img/title1.0.png);
+    background-position: center; background-size: cover;}
+/* 서비스 정보 페이지 */
+
+.information_page{width:100%; height:1500px; background-color: black;
+justify-content: center; padding: 300px;;
+}
+
+.information{width: 1190px; height: 1000px; background-color: white;
+margin: 0 auto;
+}
+
+}
