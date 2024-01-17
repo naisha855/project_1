@@ -10,11 +10,33 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/service.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.service_click:nth-of-type(1)').click(function(){
+                $('.service_click').removeClass('active');
+                $(this).addClass('active');
+                $('.service_image_page img').attr('src','img/Service11.jpg');
+            });
+
+            $('.service_click:nth-of-type(2)').click(function(){
+                $('.service_click').removeClass('active');
+                $(this).addClass('active');
+                $('.service_image_page img').attr('src','img/Service2.jpg');
+            });
+            
+            $('.service_click:nth-of-type(3)').click(function(){
+                $('.service_click').removeClass('active');
+                $(this).addClass('active');
+                $('.service_image_page img').attr('src','img/Service3.jpg');
+            });
+        
+        });
+
+    </script>
 </head>
 
 <body>
-
-
     <!-- 해더"DCG" -->
     <header>
         
@@ -24,20 +46,28 @@
             <nav>
                 <ul>
 
-                    <li><a href="#">Home</a></li>
+                    <li><a href="/project_1/index.html">Home</a></li>
                     <li><a href="#">About us</a></li>
-                    <li><a href="#">Service</a></li>
+                    <li><a href="/project_1/service1.html">Service</a></li>
                     <li><a href="#">Gallery</a></li>
                     <li><a href="#">Contects</a></li>
 
                 </ul>
-            </nav> 
+            </nav>
             
         </div>
     </header>
 
     <!-- 고정 메뉴 -->
-    <div class="chat"></div>
+    <div class="chat">
+<div class="chat_icon"> </div>
+<div class="chat_text">My Home</div>
+<div class="chat_icon"> </div>
+<div class="chat_text">Shop/steam</div>
+<div class="chat_icon"> </div>
+<div class="chat_text">Option</div>
+
+    </div>
     <!-- 태그 페이지 -->
     <div class="sub_nav">
         <div class="container">
@@ -54,14 +84,7 @@
             <div class="service_image_page"><img src="img/Service11.jpg" alt=""></div>
 
             <div class="service_image_swichi">
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
-                <div class="service_click"></div>
+                <div class="service_click active"></div>
                 <div class="service_click"></div>
                 <div class="service_click"></div>
             </div>
@@ -95,16 +118,25 @@
             </div>
         </div>
     </div>
-
+ 
 
     <!-- 정보 스위치 페이지 -->
     <div class="information_swich">
 
         <div class="information_swich_layer">
             <div class="information_swich_click">
-                <div class="information_swich_product"><div class="information_swich_icon"></div><p>Title</p></div>
-                <div class="information_swich_product_information"><div class="information_swich_icon"></div><p>Infirmation</p></div>
-                <div class="information_swich_review"><div class="information_swich_icon"></div><p>Review</p></div>
+                <div class="information_swich_product">
+                    <a href="#information"><div class="information_swich_icon"></div></a>
+                    <p>Title</p>
+                </div>
+                <div class="information_swich_product_information">
+                    <a href="#information2"><div class="information_swich_icon"></div></a>
+                    <p>Infirmation</p>
+                </div>
+                <div class="information_swich_review">
+                    <a href="#information3"><div class="information_swich_icon"></div></a>
+                    <p>Review</p>
+                </div>
             </div>
             <div class="information_swich_main"></div>
         </div>
@@ -116,7 +148,53 @@
 
     <!-- 서비스 정보 페이지 -->
 <div class="information_page">
-    <div class="information"></div>
+    <div class="information" id="information"></div>
+    <div class="information2" id="information2"></div>
+    <div class="information3" id="information3">
+        <div class="information3_review_title">Parcel out Review</div>
+<div class="user_review">
+    <div class="user_name">크레용</div>
+    <div class="user_date">2024.01.03</div>
+    <div class="user_text">
+<pre>
+올해 자취하면서 러시안블루 분양했습니다.
+검은색이라 무섭게 생겼고 한 성격 할 것 같았는데
+되게 온순하고 애교가 많네요. 잘 키우겠습니다!
+</pre>
+    </div>
+</div>
+<div class="user_review">
+    <div class="user_name">페르시안</div>
+    <div class="user_date">2023.12.23</div>
+    <div class="user_text">
+<pre>
+우리 딸이 캣츠 앤 독스 고양이다! 하면서 좋아하길래 
+크리스마스 선물로 분양했습니다. 
+딱 크리스마스 일정에 맞춰주셔서 고맙습니다
+우리 딸이 너무 좋아해요.
+</pre>
+    </div>
+</div>
+<div class="user_review">
+    <div class="user_name">레포츠공원그네</div>
+    <div class="user_date">2023.11.18</div>
+    <div class="user_text">
+<pre>
+러시안 블루가 이런 습성이 있었구나..
+너무 귀여워요 감사합니다!
+</pre>
+    </div>
+</div>
+<div class="user_review">
+    <div class="user_name">고양이학자</div>
+    <div class="user_date">2023.10.27</div>
+    <div class="user_text">
+<pre>
+Good Good~~
+</pre>
+    </div>
+</div>
+    </div>
 </div>
 
 
