@@ -7,7 +7,7 @@
     display: flex;flex-direction: column; justify-content:center; align-content:space-around; align-items:center;
     padding: 10px;
 }
-
+ 
    .chat_icon{width: 80px; height: 80px; border: 2px solid black ;
     border-radius: 100% ; background-position: center; overflow: hidden;
     background-repeat: no-repeat;
@@ -111,13 +111,13 @@ display: flex; justify-content:space-around; align-items: center;
      border: 3px solid gray;
     }
 .service_steamed{ background-color:snow ; color:#3f3f3f; font-size: 12px; font-weight: bold;}
-.service_steamed:hover{ background-color:gray; transition: 0.3s;
+.service_steamed:hover{ background-color:gray; transition: 0.3s; cursor:pointer;
 }
 .service_present{background-color:rgb(254, 39, 1); color:white;
     font-size: 12px; font-weight: bold;
 } 
 .service_present:hover{ background-color:white; transition: 0.3s;
-    color: rgb(254, 39, 1); border: solid black
+    color: rgb(254, 39, 1); border: solid black; cursor:pointer;
 }
 .service_icon {width: 30px; height:30px; 
 ; float: left;
