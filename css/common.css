@@ -81,25 +81,31 @@ footer {
     height: 130px;
     background-color: white;
 float: left;
+margin-bottom: 10px;
 }
 
 #footer_tel {
     width: 300px;
     height: 40px;
 color: hotpink;
-
     font-size: 30px;
     text-align: left;
     font-weight: bold;
 }
 
 
+#footer_link
+{width: 200px; height:50px;  float: left;
+display: flex;
+align-items: center; justify-content: center;
+flex-direction: row;
+}
+
+
 .footer_icon {
     width: 50px;
     height: 50px;
-    float: left;
-    margin: 5px;
-
+margin: 0 10px;
 }
 
 

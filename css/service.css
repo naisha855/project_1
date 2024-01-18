@@ -13,9 +13,9 @@
     background-repeat: no-repeat;
 }
 
-.chat_icon:nth-child(1){background-image: url(/project_1/img/my_home1.png);background-size: 60px; background-position: center bottom;}
-.chat_icon:nth-child(3){background-image: url(/project_1/img/shop1.png);background-size: 56px; }
-.chat_icon:nth-child(5){background-image: url(/project_1/img/option_1.png);background-size: 60px; }
+.chat_icon:nth-child(1){background-image: url(../img/my_home1.png);background-size: 60px; background-position: center bottom;}
+.chat_icon:nth-child(3){background-image: url(../img/shop1.png);background-size: 56px; }
+.chat_icon:nth-child(5){background-image: url(../img/option_1.png);background-size: 60px; }
 /* <!-- 태그 페이지 --> */ 
 .sub_nav {
     width: 100%;
@@ -122,22 +122,18 @@ display: flex; justify-content:space-around; align-items: center;
 .service_icon {width: 30px; height:30px; 
 ; float: left;
 }
-.service_steamed .service_icon {background-image: url(/project_1/img/steamed1.png);
+.service_steamed .service_icon {background-image: url(../img/steamed1.png);
 background-position: center; background-size: cover; margin: -3px 0; }
 
-.service_present .service_icon {background-image: url(/project_1/img/present.png);
+.service_present .service_icon {background-image: url(../img/present.png);
     background-position: center; background-size: cover;margin: -2px 0;}
 
 .service_pick button{width:200px ; height: 60px; border-radius: 30px; 
     align-content:center; padding: 7px; background-color: white;
     font-size: 20px; font-weight: bold;
 }
-.service_pick button p { padding: 7px;
-}
-.service_button_icon {width: 40px; height:40px; background-color: #fe2b8a;
-border-radius:100%; float: left; background-image: url(/img/point1.png);
-background-position: center; background-size: cover;
-}
+.service_pick button span { padding: 7px;}
+
 
 .service_button_icon:hover {background-color: white; transition: 0.3s;}
 
@@ -177,9 +173,9 @@ font-weight: bold; color: white;
 
 .information_swich_product:hover, .information_swich_product_information:hover, .information_swich_review:hover
 {cursor: pointer; transition: 0.3s; background-color: white; color: hotpink;}
-.information_swich_product:hover .information_swich_icon{background-image: url(/project_1/img/title1.png)}
-.information_swich_product_information:hover .information_swich_icon{background-image: url(/project_1/img/information1.png);}
-.information_swich_review:hover .information_swich_icon{background-image: url(/project_1/img/review1.png);}
+.information_swich_product:hover .information_swich_icon{background-image: url(../img/title1.png)}
+.information_swich_product_information:hover .information_swich_icon{background-image: url(../img/information1.png);}
+.information_swich_review:hover .information_swich_icon{background-image: url(../img/review1.png);}
 
 
 
@@ -187,18 +183,18 @@ font-weight: bold; color: white;
 .information_swich_main{width: 250px; height: 250px; border-radius: 100%;
 background-color: black;
 }
-.information_swich_main:hover{background-color: hotpink; transition: 0.3s; cursor:none;}
+.information_swich_main:hover{background-color: hotpink; transition: 0.3s; cursor:pointer;}
  .information_swich_icon {width: 70px; height:60px; 
 margin:10px 0;
 }
-.information_swich_review .information_swich_icon {background-image: url(/project_1/img/review1.0.png);
+.information_swich_review .information_swich_icon {background-image: url(../img/review1.0.png);
 background-position: center; background-size: cover;
 }
 
-.information_swich_product_information .information_swich_icon {background-image: url(/project_1/img/information1.0.png);
+.information_swich_product_information .information_swich_icon {background-image: url(../img/information1.0.png);
     background-position: center; background-size: cover;
 }
-.information_swich_product .information_swich_icon {background-image: url(/project_1/img/title1.0.png);
+.information_swich_product .information_swich_icon {background-image: url(../img/title1.0.png);
     background-position: center; background-size: cover;}
 /* 서비스 정보 페이지 */
 
@@ -206,11 +202,11 @@ background-position: center; background-size: cover;
 justify-content: center; padding: 300px;;
 }
 
-.information{width: 1190px; height: 2000px; background-image: url(/project_1/img/information_title.jpg);
+.information{width: 1190px; height: 2000px; background-image: url(../img/information_title.jpg);
 margin: 0 auto; background-position: center; background-size:cover;display: flex; flex-direction: column;
 }
 .information img{width: 100%; height: 100%;}
-.information2{width:1190px; height: 1000px; background-image: url(/project_1/img/information_russian_blue.jpg);
+.information2{width:1190px; height: 1000px; background-image: url(../img/information_russian_blue.jpg);
 background-position: center; background-size:cover;}
 .information3_review_title{width: 1190px; height: 50px; font-size: 30px;
 font-weight: bold; margin: 30px 55px;
